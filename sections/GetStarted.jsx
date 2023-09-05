@@ -21,7 +21,7 @@ const GetStarted = () => (
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img
-          src="/get-started.png"
+          src="/miko_world1.png"
           alt="get-started"
           className="w-[90%] h-[90%] object-contain"
         />
@@ -30,8 +30,14 @@ const GetStarted = () => (
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] flex justify-center flex-col"
       >
-        <TypingText title="| How Metaversus Works" />
-        <TitleText title={<>Get started with just a few clicks</>} />
+        <TypingText title="| How To Mint Frozen Miko" />
+        <TitleText title={<>MintYour MikoVerse NFT</>} />
+         {/* Make a link to https://revealmiko.vercel.app/ */}
+        <a href="https://revealmiko.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <button className="mt-[31px] bg-[#FFC700] text-[#000000] font-bold text-[18px] px-[30px] py-[15px] rounded-[10px]">
+            Mint Now
+          </button>
+        </a>
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
           {startingFeatures.map((feature, index) => (
             <StartSteps
